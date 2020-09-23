@@ -1,6 +1,7 @@
 asgiref==3.2.10
 boto3==1.14.59
 Django==3.0.8
+django-allauth==0.42.0; extra == "with_social"
 django-cors-headers==3.4.0
 django-rest-auth==0.9.5
 django-storages==1.10

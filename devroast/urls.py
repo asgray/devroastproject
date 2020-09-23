@@ -23,4 +23,8 @@ urlpatterns = [
     # Add REST auth URLs
     path("api_auth/", include("rest_auth.urls")),
     path("api/rest_auth/", include("rest_framework.urls")),
+    # user registration
+    path('rest-auth/', include('rest_auth.urls')),
+    path('rest-auth/registration/', include('rest_auth.registration.urls'))
+    # Adds static file route, ONLY WORKS IN DEBUG MODE
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # Adds static file route, ONLY WORKS IN DEBUG MODE

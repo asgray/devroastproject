@@ -44,10 +44,16 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
+    'django.contrib.sites', # user registration
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
     'users',
     'project',
     'storages', # static file storage
 ]
+
+SITE_ID = 1 # user registration
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
