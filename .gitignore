@@ -134,3 +134,12 @@ dmypy.json
 # React config
 .config
 frontend/react-frontend/.config
+
+# collected static files
+staticfiles/
+
+# migrations
+**/migrations/
+
+# email logs
+emails/
